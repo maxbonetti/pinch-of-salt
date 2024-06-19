@@ -7,16 +7,13 @@ const recipeSchema = new Schema({
     },
     ingredients: [
         {
-            type: Schema.Types.ObjectId,
-            ref: 'Ingredient'
+            name: String,
+            measurement: String,
         }
     ],
-    steps: [
+    directions: [
         String
     ],
-    author: {
-        type: String,
-    },
     createdAt: {
         type: Date,
         default: Date.now,
