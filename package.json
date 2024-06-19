@@ -1,0 +1,19 @@
+{
+    "name": "A Pinch of Salt",
+    "version": "1.0.0",
+    "description": "A cookbook based on family recipes using REACT",
+    "main": "index.js",
+    "scripts": {
+      "start": "cd server && npm run start",
+      "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+      "install": "cd server && npm i && cd ../client && npm i",
+      "seed": "cd server && npm run seed",
+      "build": "cd client && npm run build"
+    },
+    "keywords": [],
+    "author": "Max Bonetti",
+    "license": "MIT",
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    }
+  }
