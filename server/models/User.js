@@ -1,5 +1,5 @@
 // import { Schema, model } from 'mongoose'
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const userSchema = new Schema({
